@@ -1,9 +1,16 @@
 import React from 'react'
 import {words} from "../constants/index.js"
 import Button from "../components/Button.jsx";
-import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
+import HeroExperience from "../components/models/HeroModels/HeroExperience.jsx";
+import {useGSAP} from "@gsap/react";
+import gsap from "gsap";
 
 function Hero() {
+    useGSAP(() => {
+        gsap.fromTo(".hero-text h1",
+            {y: 50, opacity: 0}, {y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut"},);
+    })
+
     return (
         <section id="hero" className="relative overflow-hidden">
             <div className="absolute top-0 left-0 z-10">
@@ -32,7 +39,7 @@ function Hero() {
                             <h1>that Deliver Results</h1>
                         </div>
                         <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                            Hi, I'm Aida, a developer based in Iran with a passion for code
+                            Hi, I'm Aida, a frontend developer with a passion for code :)
                         </p>
                         <Button className="md:w-80 md:h-16 w-60 h-12" id="button" text="See my work"/>
                     </div>
