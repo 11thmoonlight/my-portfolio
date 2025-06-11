@@ -56,21 +56,16 @@ const techStackIcons = [
 
 
 const socialImgs = [
+
     {
-        name: "insta",
-        imgPath: "/images/insta.png",
-    },
-    {
-        name: "fb",
-        imgPath: "/images/fb.png",
-    },
-    {
-        name: "x",
-        imgPath: "/images/x.png",
+        name: "github",
+        imgPath: "/images/icons8-github-400.png",
+        url: "https://github.com/11thmoonlight",
     },
     {
         name: "linkedin",
-        imgPath: "/images/linkedin.png",
+        imgPath: "/images/icons8-linkedin-400.png",
+        url: "https://www.linkedin.com/in/aida-saeedi",
     },
 ];
 
