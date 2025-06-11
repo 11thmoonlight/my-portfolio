@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AppShowcase = () => {
     const sectionRef = useRef(null);
-    const rydeRef = useRef(null);
-    const libraryRef = useRef(null);
-    const ycDirectoryRef = useRef(null);
+    const todoRef = useRef(null);
+    const bookRef = useRef(null);
+    const beckRef = useRef(null);
 
     useGSAP(() => {
         // Animation for the main section
@@ -20,7 +20,7 @@ const AppShowcase = () => {
         );
 
         // Animations for each app showcase
-        const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+        const cards = [todoRef.current, bookRef.current, bookRef.current];
 
         cards.forEach((card, index) => {
             gsap.fromTo(
@@ -47,38 +47,35 @@ const AppShowcase = () => {
         <div id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full">
                 <div className="showcaselayout">
-                    <div ref={rydeRef} className="first-project-wrapper">
+                    <div ref={todoRef} className="first-project-wrapper">
                         <div className="image-wrapper">
-                            <img src="/images/project1.png" alt="Ryde App Interface"/>
+                            <img src="/images/project1.png" alt="Todo app screenshot"/>
                         </div>
                         <div className="text-content">
                             <h2>
-                                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                                called Ryde
+                                A simple and efficient to-do website that helps users organize, manage, and track their
+                                daily tasks for better productivity.
                             </h2>
-                            <p className="text-white-50 md:text-xl">
-                                An app built with React Native, Expo, & TailwindCSS for a fast,
-                                user-friendly experience.
-                            </p>
+
                         </div>
                     </div>
 
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={libraryRef}>
+                        <div className="project" ref={bookRef}>
                             <div className="image-wrapper bg-[#FFEFDB]">
                                 <img
                                     src="/images/project2.png"
-                                    alt="Library Management Platform"
+                                    alt="bookstore screenshot"
                                 />
                             </div>
-                            <h2>The Library Management Platform</h2>
+                            <h2>The Real life book store.</h2>
                         </div>
 
-                        <div className="project" ref={ycDirectoryRef}>
+                        <div className="project" ref={bookRef}>
                             <div className="image-wrapper bg-[#FFE7EB]">
-                                <img src="/images/project3.png" alt="YC Directory App"/>
+                                <img src="/images/project3.png" alt="beck depression test screenshot"/>
                             </div>
-                            <h2>YC Directory - A Startup Showcase App</h2>
+                            <h2>Beck depression online test.</h2>
                         </div>
                     </div>
                 </div>
