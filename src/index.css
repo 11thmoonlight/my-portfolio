@@ -11,7 +11,6 @@ html,
 body {
     width: 100dvw;
     overflow-x: hidden;
-    /*background-color: #362050;*/
     background-color: #190743;
     color: white;
     scroll-behavior: smooth;
@@ -265,7 +264,7 @@ section {
     }
 
     .tech-card-animated-bg {
-        @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#2D3240] group-hover:bottom-0 transition-all duration-700;
+        @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#463868] group-hover:bottom-0 transition-all duration-700;
     }
 
     .tech-card-content {
@@ -318,7 +317,7 @@ section {
             @apply flex items-center justify-center gap-5;
 
             .icon {
-                @apply flex justify-center items-center rounded-xl size-10 md:size-16 cursor-pointer transition-all duration-500 hover:bg-black-50;
+                @apply flex justify-center items-center rounded-xl size-10 md:size-16 cursor-pointer transition-all duration-500 ;
             }
 
             img {

@@ -23,6 +23,12 @@ const words = [
 
 const techStackIcons = [
     {
+        name: "Next js",
+        modelPath: "/models/nextjs.glb",
+        scale: 1.4,
+        rotation: [Math.PI / 2, 0, 0],
+    },
+    {
         name: "React",
         modelPath: "/models/react_logo-transformed.glb",
         scale: 1,
@@ -40,12 +46,7 @@ const techStackIcons = [
         scale: 1.4,
         rotation: [0, 0, 0],
     },
-    {
-        name: "Next js",
-        modelPath: "/models/nextjs.glb",
-        scale: 1.4,
-        rotation: [Math.PI / 2, 0, 0],
-    },
+
     {
         name: "Git",
         modelPath: "/models/git-svg-transformed.glb",

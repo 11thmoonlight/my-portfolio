@@ -48,7 +48,7 @@ const Contact = () => {
                 />
                 <div className="grid-12-cols mt-16">
                     <div className="xl:col-span-5">
-                        <div className="flex-center card-border rounded-xl p-10">
+                        <div className="flex-center card-border rounded-xl p-10 bg-[#2f1f55]">
                             <form
                                 ref={formRef}
                                 onSubmit={handleSubmit}
@@ -64,6 +64,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         placeholder="What’s your good name?"
                                         required
+                                        className="bg-[#463868]"
                                     />
                                 </div>
 
@@ -77,6 +78,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         placeholder="What’s your email address?"
                                         required
+                                        className="bg-[#463868]"
                                     />
                                 </div>
 
@@ -90,6 +92,7 @@ const Contact = () => {
                                         placeholder="How can I help you?"
                                         rows="5"
                                         required
+                                        className="bg-[#463868]"
                                     />
                                 </div>
 
