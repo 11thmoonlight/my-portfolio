@@ -53,8 +53,7 @@ const AppShowcase = () => {
                         </div>
                         <div className="text-content">
                             <h2>
-                                A simple and efficient to-do website that helps users organize, manage, and track their
-                                daily tasks for better productivity.
+                                TaskVerse – Full-Feature To-Do App
                             </h2>
 
                         </div>
@@ -68,14 +67,14 @@ const AppShowcase = () => {
                                     alt="bookstore screenshot"
                                 />
                             </div>
-                            <h2>The Real life book store.</h2>
+                            <h2>Hinode – Online full-stack book store</h2>
                         </div>
 
                         <div className="project" ref={bookRef}>
                             <div className="image-wrapper bg-[#FFE7EB]">
                                 <img src="/images/project3.png" alt="beck depression test screenshot"/>
                             </div>
-                            <h2>Beck depression online test.</h2>
+                            <h2>MindCheck – Beck Depression Test App</h2>
                         </div>
                     </div>
                 </div>
